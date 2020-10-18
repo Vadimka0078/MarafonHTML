@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мотивация</title>
+    <link rel="stylesheet" href="css/css reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('a[href*=#]').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                && location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body').animate({scrollTop: targetOffset}, 500);//скорость прокрутки
+                        return false;
+                    }
+                }
+            });
+        });
+        </script>
+</head>
+<body>
+
+    <!-- header start -->
+
+    <header class="header">
+      <div class="background">  
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/" class="header__logo-link">
+                        <img src="./img/logo.svg" alt="logo" class="header__logo-pic">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Статьи</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Обо мне</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">Написать мне</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+          </div>
+        </div>
+    </header>
+    
+    <!-- header end -->
+
+    <!-- main start -->
+
+    <main class="main">
+
+    <!-- intro start -->
+
+        <section class="intro">
+            <div class="wrapper">
+                <div class="intro___title">
+                    <h1 class="intro__title">Как себя мотивировать</h1>
+                </div>
+                <div class="article__tag">
+                    <p class="article__card-tag">
+                        Теги: путешествия, друзья <time class="article__card-date">29.09.2020</time>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <!-- intro end -->
+    
+    <!-- article start -->
+
+        <div class="article">
+            <div class="wrapper">
+                <div class="wrapper__article">
+                    <p class="article__info-part1">
+                        Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе<br> мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как гены и мозг мешают нам бороться
+                        <br>с соблазнами» Ирины Якутенко.<br><br><br> Согласно этой теории, человеческое поведение контролируют две системы: BAS (Behavior Activation System) и BIS (Behavior<br> Inhibition System), каждая из них обусловлена генетически. Грей использовал её для понимания того, как вознаграждение<br> или наказание связаны с беспокойством и импульсивностью. Самое интересное, что активность этих систем у людей различна. Зная, какая из них доминирует, можно понять, какие стимулы использовать для эффективной мотивации.
+                    </p> 
+                    <figure>
+                        <img src="/img/pencil.png" alt="Фломастер" class="pencil">
+                        <figcaption class="desc__img">Моё поведение регулируется больше BAS, поэтому при планировании целей я всегда использую позитивный стимул.</figcaption>
+                    </figure>
+                    <p class="article__info-part2">
+                        BAS (Behavior Activation System) работает на ощущение позитивных эмоций. Мотивация людей, чье поведение в основном определяется этой системой, направлена на получение вознаграждения. Они стремятся получить одобрение и награду<br>
+                        за свои действия. Такие люди более мотивированы в учебе и развитии разных навыков. Однако носители активной BAS склонны к импульсивности и желанию немедленного вознаграждения, что может мешать долгосрочной работе.<br>
+                        BIS (Behavior Inhibition System) ответственна за избегающее поведение. Люди с этой активной системой мотивируются стремлением избежать проблем. Они более чувствительны к наказанию и новому опыту, а также стремятся избежать ситуаций, когда чувствуют, что могут потерпеть неудачу.<br><br><br>
+                        
+                        Определив, к какому типу относится поведение, вы узнаете, какие стимулы использовать для достижения поставленной<br> цели. Например, я решила выучить английский — само изучение не является целью, поэтому нужно правильно<br>
+                        её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью какую-то награду: например, если я выучу английский, то смогу смотреть фильмы в оригинале. Если же я склонна к BIS поведению, целью нужно выбрать избежание проблем: если я заговорю на английском, то не потеряюсь в новой стране. И это можно использовать в различных сферах жизни.
+                    </p>
+                    <div class="footer__article">
+                        <div class="like__logo">
+                            <a href="/" class="like__logo-link">
+                                <img src="/img/like.svg" alt="logo" class="like__logo-pic">
+                            </a>
+                            <p class="count__likes">16</p>
+                            <div class="like__loo-link1">
+                                <a href="/" class="link__social">
+                                    <img src="img/twit.png" alt="logo" class="like__logo-pic">
+                                </a>
+                            </div>
+                            <div class="like__loo-link2">
+                                <a href="/">
+                                    <img src="img/facebook (1) 1.png" alt="logo" class="like__logo-pic">
+                                </a>
+                            </div>
+                            <div class="like__loo-link3">
+                                <a href="/">
+                                    <img src="img/vk 1.svg" alt="logo" class="like__logo-pic">
+                                </a>
+                            </div>
+                        </div>
+                    <div class="back__to-main">
+                        <p class="backto">Ко всем статьям <img src="/img/Arrow 1.png" alt="" class="arrow"></p>
+                    </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+    <!-- article end -->
+
+    <!-- replies start -->
+
+        <div class="replies">
+            <div class="wrapper__replies">
+                <div class="act__replies">
+                    <div class="reply wrong">
+                        <p class="user__name"><img src="/img/user_pic1.png" alt="" class="user__pic">Иван Петров</p>
+                        <p class="reply__content">Отличная статья! Спасибо.</p>
+                    </div>
+                    <div class="reply">
+                        <p class="user__name"><img src="/img/user_pic2.png" alt="" class="user__pic">Иван Петров</p>
+                        <p class="reply__content">Отличный текст, добавила в закладки.</p>
+                    </div>
+                    <div class="reply">
+                        <p class="user__name"><img src="/img/user_pic3.png" alt="" class="user__pic">Иван Петров</p>
+                        <p class="reply__content">Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
+                    </div>
+                </div>
+                <div class="chat">
+                    <div class="wrapper_replies">
+                        <div class="chat__form">
+                            <p class="chat__name">Оставить комментарий</p>
+                            <form action="#" name="newform" method="POST">
+                                <div class="form">
+                                    <div class="form__inputs">
+                                        <div class="login__form">
+                                            <p class="form-name">Имя</p>
+                                            <input required minlength="3" maxlength="20" class="log" type="text">
+                                            <p class="form-email">Почта</p>
+                                            <input required minlength="10" maxlength="40" type="email" class="email">             
+                                            <input type="submit" value="Отправить" class="button__block">
+                                        </div>
+                                        <div class="area">
+                                            <textarea required minlength="10" maxlength="200" name="text" class="comment" placeholder="Написать комментарий..."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- replies end -->
+
+    </main>
+
+    <!-- main end -->
+    
+    <!-- footer start -->
+
+    <footer>
+        <div class="wrapper_footer">
+            <div class="social">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#!" class="footer__link">ВК</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#!" class="footer__link">Телеграм</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#!" class="footer__link">Инстаграм</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#!" class="footer__link">Твиттер</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+</body>
+</html>
